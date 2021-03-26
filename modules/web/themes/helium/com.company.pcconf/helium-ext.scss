@@ -1,0 +1,69 @@
+/* Define your theme modifications inside next mixin */
+@mixin com_company_pcconf-helium-ext {
+  /* Basic */
+--app-background-color: #F7F7F7;
+--error-color: #D33350;
+--primary-color: #008962;
+--primary-color_rgb: 0, 137, 98;
+--secondary-color: #1F6342;
+--secondary-color_rgb: 31, 99, 66;
+--warning-color: #E1BA5F;
+
+  /* Common */
+--error-color-shade-1: #BC2944;
+--error-color-shade-2: #A7253D;
+--error-dim-color: #DF6D82;
+--primary-color-shade-1: #007552;
+--primary-color-shade-2: #006647;
+--primary-dim-color: #039365;
+--secondary-color-shade-1: #1B5538;
+--secondary-color-shade-2: #184E33;
+--secondary-dim-color: #3AB678;
+--text-secondary-color: #1A1A1A;
+--warning-contrast-text-color: #FFFFFF;
+
+  /* Accordion */
+--accordion-item-caption-text-color: #1A1A1A;
+
+  /* AppMenu */
+--menubar-background-color: #FFFFFF;
+--menubar-text-color: #1A1A1A;
+
+  /* Basic */
+--border-color: #1F1F1F;
+--text-main-color: #1A1A1A;
+
+  /* Button */
+--button-default-text-color: #1A1A1A;
+--button-default-color: #DBDBDB;
+--button-default-hover-color: #008962;
+
+  /* CheckBox */
+--checkbox-border-color: #1F1F1F;
+--checkbox-checked-focused-background-color: #FFFFFF;
+--checkbox-focused-background-color: #FFFFFF;
+--checkbox-focused-border-color: #1F1F1F;
+
+  /* ColorPicker */
+--colorpicker-buttons-panel-border-color: #1F1F1F;
+
+  /* ComboBox */
+--combobox-button-text-color: #1A1A1A;
+
+  /* Grid */
+--grid-selected-row-border-color: #008962;
+
+  /* GroupBox */
+--groupbox-border-color: #039365;
+--groupbox-collapsed-background-color: #FFFFFF;
+
+  /* TabSheet */
+--tabsheet-framed-tabitemcell-caption-hover-text-color: #1A1A1A;
+--tabsheet-framed-tabitemcell-caption-text-color: #1A1A1A;
+
+  /* Table */
+--table-hovered-row-background-color: #06A168;
+--table-hovered-row-text-color: #FFFFFF;
+--table-selected-row-background-color: #008962;
+
+}
