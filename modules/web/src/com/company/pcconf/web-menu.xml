@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://schemas.haulmont.com/cuba/menu.xsd">
+    <menu id="application-pcconf" insertBefore="administration" caption="mainMsg://menu_config.application-pcconf">
+        <item screen="pcconf_UserMainScreen" caption="mainMsg://menu_config.pcconf_UserMainScreen"/>
+        <item screen="pcconf_Product.browse" caption="mainMsg://menu_config.pcconf_Product.browse"/>
+    </menu>
+</menu-config>

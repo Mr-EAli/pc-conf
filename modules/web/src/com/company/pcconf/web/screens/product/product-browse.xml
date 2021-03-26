@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        xmlns:c="http://schemas.haulmont.com/cuba/screen/jpql_condition.xsd"
+        caption="msg://productBrowse.caption"
+        focusComponent="productsTable"
+        messagesPack="com.company.pcconf.web.screens.product">
+    <data readOnly="true">
+        <collection id="productsDc"
+                    class="com.company.pcconf.entity.Product">
+            <view extends="_local"/>
+            <loader id="productsDl">
+                <query>
+                    <![CDATA[select e from pcconf_Product e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="600"
+                width="800"/>
+    <layout expand="productsTable"
+            spacing="true">
+        <groupTable id="productsTable"
+                    width="100%"
+                    dataContainer="productsDc">
+            <actions>
+                <action  id="addInCorf" caption="msg://Add in Corf" />
+            </actions>
+            <columns>
+                <column id="name"/>
+                <column id="type"/>
+                <column id="price"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>
