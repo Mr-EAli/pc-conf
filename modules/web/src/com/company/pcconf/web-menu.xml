@@ -3,5 +3,7 @@
     <menu id="application-pcconf" insertBefore="administration" caption="mainMsg://menu_config.application-pcconf">
         <item screen="pcconf_UserMainScreen" caption="mainMsg://menu_config.pcconf_UserMainScreen"/>
         <item screen="pcconf_Product.browse" caption="mainMsg://menu_config.pcconf_Product.browse"/>
+        <item screen="pcconf_ProductCorf.browse" caption="mainMsg://menu_config.pcconf_ProductCorf.browse"/>
+        <item screen="pcconf_Corf.browse" caption="mainMsg://menu_config.pcconf_Corf.browse"/>
     </menu>
 </menu-config>

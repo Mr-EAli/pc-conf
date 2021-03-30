@@ -11,8 +11,6 @@
                     <button id="products_btn" caption="msg://ChooseProduct" align="TOP_CENTER" width="100%" height="40px"/>
                     <button id="corf_btn" caption="msg://Corf" align="TOP_CENTER" width="100%" height="40px"/>
                     <button id="addProducts_btn" caption="msg://AddProducts" align="TOP_CENTER" width="100%" height="40px"/>
-                    <label value=" " align="MIDDLE_CENTER"/>
-                    <button id="close_btn" caption="msg://Close" align="MIDDLE_CENTER" width="100%" height="40px"/>
                 </vbox>
             </vbox>
         </vbox>

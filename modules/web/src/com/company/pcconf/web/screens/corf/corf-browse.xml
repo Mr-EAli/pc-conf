@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/screen/window.xsd"
+        xmlns:c="http://schemas.haulmont.com/cuba/screen/jpql_condition.xsd"
+        caption="msg://corfBrowse.caption"
+        focusComponent="corfsTable"
+        messagesPack="com.company.pcconf.web.screens.corf">
+    <data readOnly="true">
+        <collection id="corfsDc"
+                    class="com.company.pcconf.entity.Corf">
+            <view extends="_local">
+                <property name="product" view="_minimal">
+                    <property name="name"/>
+                    <property name="type"/>
+                    <property name="price"/>
+                </property>
+            </view>
+            <loader id="corfsDl">
+                <query>
+                    <![CDATA[select e from pcconf_Corf e]]>
+                </query>
+            </loader>
+        </collection>
+    </data>
+    <dialogMode height="400px"
+                width="600px"
+                modal="true"
+                forceDialog="true"/>
+    <layout expand="corfsTable"
+            spacing="true">
+        <groupTable id="corfsTable"
+                    width="100%"
+                    dataContainer="corfsDc">
+            <actions>
+            </actions>
+            <columns>
+                <column id="product.name"/>
+                <column id="product.type"/>
+                <column id="product.price"/>
+            </columns>
+            <rowsCount/>
+            <buttonsPanel id="buttonsPanel"
+                          alwaysVisible="true">
+            </buttonsPanel>
+        </groupTable>
+        <hbox id="lookupActions" spacing="true" visible="false">
+            <button action="lookupSelectAction"/>
+            <button action="lookupCancelAction"/>
+        </hbox>
+    </layout>
+</window>
