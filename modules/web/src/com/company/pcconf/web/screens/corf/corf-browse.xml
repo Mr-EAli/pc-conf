@@ -7,7 +7,7 @@
     <data readOnly="true">
         <collection id="corfsDc"
                     class="com.company.pcconf.entity.Corf">
-            <view extends="_local">
+            <view extends="corf-view">
                 <property name="product" view="_minimal">
                     <property name="name"/>
                     <property name="type"/>

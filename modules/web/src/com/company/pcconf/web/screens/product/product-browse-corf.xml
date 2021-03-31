@@ -20,8 +20,8 @@
     <layout expand="productsTable"
             spacing="true">
         <groupTable id="productsTable"
-                    width="100%"
-                    dataContainer="productsDc">
+                    width="900px"
+                    dataContainer="productsDc" align="TOP_CENTER">
             <buttonsPanel>
                 <button id="AddInCorf" caption="msg://Add In Corf" width="180px" visible="false"/>
                 <button id="RemoveInCorf" caption="msg://remove Out Corf" stylename="danger" visible="false"/>
